@@ -6,4 +6,8 @@ public class Materiales {
      * Arena de silice grano 0,4 -0,8 precio en €/Kg
      */
     static double [] precioMateriales ={0.15,0.19,0.20};
+    /**
+     * TODO debería crear una base de datos con los materiales listados por: referencia,precio,nombre,vendido por.
+     *
+     */
 }

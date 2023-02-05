@@ -31,4 +31,14 @@ public class Obra {
 
     }
 
+    @Override
+    public String toString() {
+        return "Obra{" +
+                "idObra=" + idObra +
+                ", idCliente=" + idCliente +
+                ", direccion='" + direccion + '\'' +
+                ", asuntoObra=" + Arrays.toString(asuntoObra) +
+                ", presupuesto=" + presupuesto +
+                '}';
+    }
 }

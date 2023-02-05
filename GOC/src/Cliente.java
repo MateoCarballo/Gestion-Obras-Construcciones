@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Cliente {
     //como referenciarlos en la aplicacion
     public int idCliente;
@@ -16,5 +18,21 @@ public class Cliente {
     public int [] obrasCliente = new int [100];
     Cliente(){
 
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "idCliente=" + idCliente +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", fechaDeNacimiento='" + fechaDeNacimiento + '\'' +
+                ", residencia='" + residencia + '\'' +
+                ", codigoPostal=" + codigoPostal +
+                ", telefonodeContacto1='" + telefonodeContacto1 + '\'' +
+                ", telefonodeContacto2='" + telefonodeContacto2 + '\'' +
+                ", correoElectronico='" + correoElectronico + '\'' +
+                ", obrasCliente=" + Arrays.toString(obrasCliente) +
+                '}';
     }
 }
