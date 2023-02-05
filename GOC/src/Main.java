@@ -1,12 +1,13 @@
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         int entradaTeclado;
-        Obra[] misObras = new Obra[1000];
-        Cliente[] misClientes= new Cliente[100];
 
+        ArrayList<Obra> misObras = new ArrayList<Obra>();
+        ArrayList<Cliente> misClientes = new ArrayList<Cliente>();
         do {
         System.out.println("""
                 ######################
@@ -41,8 +42,8 @@ public class Main {
                 Operaciones.consultarCliente(misClientes);
                 break;
             case 7:
-                //Operaciones.escribirTodo(misClientes);
-                Operaciones.escribirTodo(misObras);
+                //Operaciones.escribirArrayListCliente(misClientes);
+                Operaciones.escribirArrayListObra(misObras);
                 break;
             case 8:
                 break;
