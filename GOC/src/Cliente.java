@@ -22,17 +22,17 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "idCliente=" + idCliente +
-                ", nombre='" + nombre + '\'' +
-                ", apellidos='" + apellidos + '\'' +
-                ", fechaDeNacimiento='" + fechaDeNacimiento + '\'' +
-                ", residencia='" + residencia + '\'' +
-                ", codigoPostal=" + codigoPostal +
-                ", telefonodeContacto1='" + telefonodeContacto1 + '\'' +
-                ", telefonodeContacto2='" + telefonodeContacto2 + '\'' +
-                ", correoElectronico='" + correoElectronico + '\'' +
-                ", obrasCliente=" + Arrays.toString(obrasCliente) +
+        return "######################### Cliente #########################"+ '\n' +
+                "idCliente= " + idCliente +'\n' +
+                "Nombre= " + nombre + '\n' +
+                "Apellidos= " + apellidos + '\n' +
+                "Fecha De Nacimiento= " + fechaDeNacimiento + '\n' +
+                "Residencia= " + residencia + '\n' +
+                "Código Postal= " + codigoPostal +
+                "Teléfono de Contacto 1= " + telefonodeContacto1 + '\n' +
+                "Teléfono de Contacto 2= " + telefonodeContacto2 + '\n' +
+                "Correo Electrónico= " + correoElectronico + '\n' +
+                "Obras Cliente={ " + Arrays.toString(obrasCliente) +
                 '}';
     }
 }

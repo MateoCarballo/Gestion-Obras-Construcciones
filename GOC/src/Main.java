@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        int entradaTeclado=0;
+        int entradaTeclado;
         Obra[] misObras = new Obra[1000];
         Cliente[] misClientes= new Cliente[100];
 
@@ -18,6 +18,7 @@ public class Main {
                 4.Nuevo cliente.
                 5.Consultar cliente.
                 6.Modificar cliente.
+                8.Mostras el numero de clientes y obras acumulados.
                 9.Salir.
                 """);
 
@@ -31,18 +32,20 @@ public class Main {
             case 2:
                 Operaciones.consultarObra(misObras);
                 break;
-
             case 3:
                 break;
-
             case 4:
                 Operaciones.crearCliente(misClientes);
                 break;
-
             case 5:
                 Operaciones.consultarCliente(misClientes);
                 break;
-
+            case 7:
+                //Operaciones.escribirTodo(misClientes);
+                Operaciones.escribirTodo(misObras);
+                break;
+            case 8:
+                break;
             default:
                 break;
         }

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Obra {
@@ -13,22 +14,20 @@ public class Obra {
      *
      * TODO deberiamos tener un acumulado de gastos para saber cuanto estamos gastando
      */
-
-    public String [] asuntoObra= new String [30];
     public int      presupuesto;
 
-
+    ArrayList<String> asuntoObra = new ArrayList<String>();
 
     Obra(){
 
     }
-    public Obra(int idObra,int idCliente, String [] asuntoObra, String direccion, int presupuesto) {
-        this.asuntoObra=    asuntoObra;
-        this.idObra=        idObra;
-        this.idCliente=     idCliente;
-        this.direccion =    direccion;
-        this.presupuesto =  presupuesto;
 
+    public Obra(int idObra, int idCliente, String direccion, int presupuesto, ArrayList<String> asuntoObra) {
+        this.idObra = idObra;
+        this.idCliente = idCliente;
+        this.direccion = direccion;
+        this.presupuesto = presupuesto;
+        this.asuntoObra = asuntoObra;
     }
 
     @Override
@@ -37,8 +36,8 @@ public class Obra {
                 "idObra=" + idObra +
                 ", idCliente=" + idCliente +
                 ", direccion='" + direccion + '\'' +
-                ", asuntoObra=" + Arrays.toString(asuntoObra) +
                 ", presupuesto=" + presupuesto +
+                ", asuntoObra=" + asuntoObra +
                 '}';
     }
 }

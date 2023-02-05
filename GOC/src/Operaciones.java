@@ -28,14 +28,15 @@ public class Operaciones {
         int busqueda;
         System.out.println("Introduce el id de la obra a consultar"+"\n");
         busqueda=Integer.parseInt(br.readLine());
-        misObras[busqueda].toString();
+        System.out.println(misObras[busqueda]);
     }
     public static void consultarCliente(Cliente[]misClientes)throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int busqueda;
-        System.out.println("Introduce el id de la obra a consultar");
+        System.out.println("Introduce el id del cliente a consultar");
         busqueda=Integer.parseInt(br.readLine());
-        misClientes[busqueda].toString();
+        System.out.println(misClientes[busqueda]);
+
     }
 
     public static void añadirAsuntoObra(Obra[]miObra,int idObra,int diaAsunto)throws IOException {
@@ -45,10 +46,20 @@ public class Operaciones {
         entradaTeclado= br.readLine();
         if(entradaTeclado.compareToIgnoreCase("Y")==0){
             System.out.println("\n"+"Introduce tu descripccion y pulsa enter");
-            miObra[idObra].asuntoObra[diaAsunto]=br.readLine();
+            miObra[idObra].asuntoObra.add(br.readLine());
         }
     }
 
+    public static void escribirTodo(Cliente[]misClientes){
+        for (int i = 0; i < misClientes.length; i++) {
+            System.out.println((misClientes[i]));
+        }
+    }
+    public static void escribirTodo(Obra[]misObras){
+        for (int i = 0; i < misObras.length; i++) {
+            System.out.println((misObras[i]));
+        }
+    }
     public static void borrarDatos(){
 
     }
