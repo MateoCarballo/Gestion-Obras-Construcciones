@@ -3,7 +3,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Operaciones {
+    static private int idClienteclase =0;
+    static private int idObraClase=0;
+    public static void crearObra(Obra[]miObra) throws IOException {
 
+        miObra[idObraClase]= new Obra();
+        miObra[idObraClase].idObra=idObraClase;
+    }
+    public static void crearCliente(Cliente[] micliente){
+        micliente[idClienteclase]=new Cliente();
+        micliente[idClienteclase].idCliente=idClienteclase;
+    }
     public static void añadirNuevaObra(){
 
     }
@@ -16,16 +26,7 @@ public class Operaciones {
     public static void borrarDatos(){
 
     }
-    public static void crearObra(Obra[] misObras,int contadorObras) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        misObras[contadorObras]= new Obra();
-        System.out.println("Direccion de la obra?");
-        misObras[contadorObras].direccion=br.readLine();
-        System.out.println("Fecha de inicio de la obra?");
-        misObras[contadorObras].fechaIncio=br.readLine();
-        System.out.println("Que materiales has usado?");
 
-    }
     public static void crearCliente(){
 
     }
